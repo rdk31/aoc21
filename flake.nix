@@ -17,6 +17,7 @@
           devShell = pkgs.mkShell {
             buildInputs = with pkgs; [
               haskellPackages.ghc
+              python3
             ];
           };
         }
