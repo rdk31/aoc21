@@ -18,7 +18,7 @@ part1 x =
 
 part2 :: (Int -> Int -> Bool) -> Int -> [[Int]] -> [[Int]]
 part2 p i xs
-  | i >=  length (head xs) = xs
+  | i >= length (head xs) = xs
   | length xs == 1 = xs
   | otherwise = part2 p (i + 1) xs'
   where
